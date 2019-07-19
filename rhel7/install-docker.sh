@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /etc/redhat-release;echo "===================================================";cat /etc/os-release;echo "===================================================";hostname;echo "===================================================";yum repolist all;echo "===================================================";ip a;echo "===================================================";yum -y install java-1.8.0-openjdk-devel && yum -y install docker && systemctl enable docker.service && systemctl start docker.service; echo "========== Done! ============"
